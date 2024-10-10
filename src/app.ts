@@ -14,6 +14,6 @@ app.use(express.urlencoded({ extended: false }));
 /**
  * Registering the App Router
  */
-app.use("/api", appRouter);
+app.use(appRouter);
 
 export { app };
