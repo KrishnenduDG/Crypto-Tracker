@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
-import { COINS_IDS, failureLabel, successLabel } from "../constants";
+import { COINS_IDS, failureLabel } from "../constants";
 import { CryptoRepo } from "../repository";
+import { getStandardDeviationOfAnArray } from "../utils/helper";
 
 export class CryptoController {
   /**
@@ -44,6 +45,28 @@ export class CryptoController {
         price: targetCrypto[0].price.slice(-1)[0],
         marketCap: targetCrypto[0].marketCap.slice(-1)[0],
         "24hChange": targetCrypto[0].change.slice(-1)[0],
+      });
+    } catch (error) {
+      return res
+        .status(500)
+        .json({ status: failureLabel, message: "Internal Server Error" });
+    }
+  }
+
+  static async handleGetPriceDeviation(req: Request, res: Response) {
+    // Getting the Query Params from the route
+    const coinName = req.query.coin as string;
+
+    // Invalid Coin Type
+    if (COINS_IDS.indexOf(coinName) == -1)
+      return res
+        .status(400)
+        .json({ status: failureLabel, message: "Invalid Coin Type" });
+
+    try {
+      const targetCrypto = await CryptoRepo.getCryptoByName(coinName);
+      return res.status(200).json({
+        deviation: getStandardDeviationOfAnArray(targetCrypto[0].price),
       });
     } catch (error) {
       return res

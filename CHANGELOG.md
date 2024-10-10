@@ -9,3 +9,7 @@
 ## v0.0.1 (Feature)
 
 - Implemented the `/stats` route to get the current stat of a Cryptocurrency.
+
+## v0.0.2 (Feature)
+
+- Implemented the `/deviation` route to get the Standard Deviation in Price of a Cryptocurrency.
