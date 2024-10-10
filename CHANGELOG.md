@@ -13,3 +13,8 @@
 ## v0.0.2 (Feature)
 
 - Implemented the `/deviation` route to get the Standard Deviation in Price of a Cryptocurrency.
+
+## v0.0.3 (Feature)
+
+- Necessary Documentation added.
+- Implemented the `2 digits after decimal places` for `/deviation`.

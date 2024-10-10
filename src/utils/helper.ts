@@ -19,13 +19,19 @@ export const getArrayBasedOnLRUImplementation = (
  * Calculates the standard deviation of an array of numbers.
  *
  * @param {number[]} arr - The array of numbers for which to calculate the standard deviation.
- * @returns {number} The standard deviation of the input array.
+ * @param {number} [roundOffLimit=2] - The number of decimal places to round the result to. Defaults to 2.
+ *
+ * @returns {number} The standard deviation of the provided array, rounded to the specified number of decimal places.
+ *
  */
-export const getStandardDeviationOfAnArray = (arr: number[]): number => {
+export const getStandardDeviationOfAnArray = (
+  arr: number[],
+  roundOffLimit: number = 2
+): number => {
   const mean = arr.reduce((sum, value) => sum + value, 0) / arr.length;
 
   const variance =
     arr.reduce((sum, value) => sum + Math.pow(value - mean, 2), 0) / arr.length;
 
-  return Math.sqrt(variance);
+  return Number(Math.sqrt(variance).toFixed(roundOffLimit));
 };
