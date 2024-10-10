@@ -18,3 +18,8 @@
 
 - Necessary Documentation added.
 - Implemented the `2 digits after decimal places` for `/deviation`.
+
+## v0.0.4 (Bugfix + Documentation)
+
+- Minor bugfix in file import
+- Proper documentation written in [README.md](./README.md)

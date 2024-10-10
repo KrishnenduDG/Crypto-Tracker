@@ -1,1 +1,1 @@
-export { CryptoController } from "./crypto";
+export { CryptoController } from "./Crypto";
