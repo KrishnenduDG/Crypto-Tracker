@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "packageManager": "pnpm@9.7.0",
   "scripts": {
     "watch:compile": "tsc --watch",
     "start": "node --env-file .env --watch build/index.js",

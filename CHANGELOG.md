@@ -23,3 +23,7 @@
 
 - Minor bugfix in file import
 - Proper documentation written in [README.md](./README.md)
+
+## v0.0.5 (Bugfix)
+
+- Included the `packageManager` prop in `package.json` for deployment
