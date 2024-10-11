@@ -27,3 +27,7 @@
 ## v0.0.5 (Bugfix)
 
 - Included the `packageManager` prop in `package.json` for deployment
+
+## v1.0.0 (Deployment)
+
+- First Deployment done ✅

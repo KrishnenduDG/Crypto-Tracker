@@ -4,7 +4,11 @@
 
 - **Krishnendu Dasgupta** - [KrishnenduDG](https://github.com/KrishnenduDG)
 
-## Overview 🚀
+## Deployment Details 🚀
+
+The API has been deployed using **Koyeb** web service and is avaiable at https://overseas-rianon-krishnendu-org-fca508d5.koyeb.app/
+
+## Overview 🌟
 
 **Crypto-Tracker** is a backend application built with **NodeJS**, **Express**, and **MongoDB** that tracks real-time cryptocurrency data, including **Bitcoin**, **Matic**, and **Ethereum**. It periodically fetches data from the **CoinGecko API** and stores it in a database.
 
