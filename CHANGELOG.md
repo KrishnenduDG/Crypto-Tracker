@@ -31,3 +31,7 @@
 ## v1.0.0 (Deployment)
 
 - First Deployment done ✅
+
+## v1.0.1 (Deployment)
+
+- Deployment notes changed in [README.md](./README.md)

@@ -6,7 +6,7 @@
 
 ## Deployment Details 🚀
 
-The API has been deployed using **Koyeb** web service and is avaiable at https://overseas-rianon-krishnendu-org-fca508d5.koyeb.app/
+The API has been deployed using **Render** web service and is avaiable at https://crypto-tracker-bpgb.onrender.com
 
 ## Overview 🌟
 
